@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Captura de Foto</title>
+    <link rel="stylesheet" href="Estilos.css">
+</head>
+<body>
+    <h1>Control de Asistencia</h1>
+    
+    <div class="contenedor">
+        <video id="video" autoplay></video>
+        <canvas id="canvas" style="display:none;"></canvas>
+        <img id="fotoCapturada" src="" alt="Foto tomada" style="display: none;">
+    </div>
+    
+    <form id="registroAsistencia">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="cedula">Cédula:</label>
+        <input type="number" id="cedula" name="cedula" required>
+
+        <label for="salidaOEntrada">Tipo de Registro:</label>
+        <select id="salidaOEntrada" onchange="cambiarFormulario()">
+            <option value="entrada">Entrada</option>
+            <option value="salida">Salida</option>
+        </select>
+
+        <button type="button" id="capturar">Tomar Foto</button>
+    </form>
+
+    <p id="mensajeExito" style="display: none; color: green; font-weight: bold;"></p>
+
+    <script src="JavaScript.js"></script>
+</body>
+</html>
