@@ -14,7 +14,7 @@ app.use(bodyParser.json());//Configura el servidor para que pueda interpretar lo
 // Conexión a la base de datos MySQL
 const db = mysql.createConnection({//creaa la conexion con MySQL
     host: "localhost",// determina que la base de datos se encuentra en el mismo servidor
-    user: "adminsena",// se especifica el nombre del usuario que se va a utilizar para acceder a la base de datos
+    user: "root",// se especifica el nombre del usuario que se va a utilizar para acceder a la base de datos
     password: "123456789",// se indica cual es la contraseña asociada al usuario para poder acceder a la base de datos
     database: "control_asistencia"//especifica cual es el nombre de la base de datos que se va a utilizar
 });
