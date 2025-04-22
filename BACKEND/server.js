@@ -1,6 +1,6 @@
 //importamos librerias necesarias para el proyecto
 const express = require("express");//Se usa para crear el servidor y gestionar las rutas
-const mysql = require("mysql");//Permite la conexión con la base de datos MySQL
+const mysql = require("mysql2");//Permite la conexión con la base de datos MySQL
 const multer = require("multer");//Maneja la carga de archivos 
 const cors = require("cors");//Permite que el servidor sea accesible desde otros dominios, por ejemplo el frontend
 const bodyParser = require("body-parser");// Se usa para analizar los datos de las solicitudes HTTP
